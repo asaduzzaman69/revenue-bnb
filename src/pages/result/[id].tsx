@@ -353,10 +353,10 @@ const Result: FC<any> = ({ data }) => {
         >
             <Box>
                 <Head>
-                    <title>Demo title</title>
+                    <title> Revenuebnb - {data.location}</title>
                     <meta name="description" content="Add a shopping cart to your site in minutes. Works with any site builder, CMS, and framework. 20 000+ merchants trust our e-commerce solution for their website. Join them!" />
-                    <meta property="og:title" content="Add a Shopping Cart to Any Website in Minutes - Snipcart" />
-                    <meta property="og:description" content={data.location} />
+                    <meta property="og:title" content={`Revenuebnb - ${data.location}`} />
+                    <meta property="og:description" content={`Revenuebnb Vacation Rental revenue prediction for ${data.location}`} />
                     <meta property="og:url" content="https://snipcart.com/" />
                     <meta property="og:type" content="website" />
                 </Head>
