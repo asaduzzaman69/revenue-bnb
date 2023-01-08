@@ -197,14 +197,14 @@ export default function Home() {
     /* Lng lat */
     if (isUserAvailable.isUserAvailable) {
 
-      setShowLoading(true);
+      setShowLoading();
       const id = await setBaseResultDoc({
         ...counts,
         coordinates: propertyCoordinates,
         createdBy: currentUser.id,
         location,
       });
-      setShowLoading(false);
+      setShowLoading();
 
       navigate.push(`result/${id}`);
     } else {
